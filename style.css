@@ -67,6 +67,15 @@ h2{
     font-weight: var(--fw-bold);
 }
 
+h3{
+    font-size: var(--fs-headings);
+    font-weight: var(--fw-bold);
+}
+
+p{
+    color: var(--clr-secondary);
+}
+
 /* section {
     padding: 0 300px;
 } */
@@ -240,6 +249,7 @@ nav{
     margin-top: 35px;
     font-size: 18px;
     font-weight: var(--fw-bold);
+    color: black;
 }
 
 .primary-btn{
@@ -326,7 +336,6 @@ nav{
 }
 
 .support p{
-    color: var(--clr-secondary);
     line-height: 30px;
 }
 
@@ -373,11 +382,6 @@ nav{
     margin-bottom: 40px;
 }
 
-.service h3{
-    font-size: var(--fs-headings);
-    font-weight: var(--fw-bold);
-}
-
 /* Features CSS Starts Here */
 
 .top-content h2{
@@ -388,7 +392,6 @@ nav{
 }
 
 .top-content p{
-    color: var(--clr-secondary);
     width: 500px;
     line-height: 30px;
 }
@@ -415,13 +418,10 @@ nav{
 }
 
 .team h3{
-    font-size: var(--fs-headings);
-    font-weight: var(--fw-bold);
     margin: 20px 0 15px;
 }
 
 .team p{
-    color: var(--clr-secondary);
     line-height: 30px;
 }
 
@@ -495,7 +495,6 @@ align-items: center;
 }
 
 .pricing-content p{
-color: var(--clr-secondary);
 line-height: 30px;
 text-align: center;
 }
@@ -531,4 +530,118 @@ border-radius: 8px;
 
 .billing-year a{
     color: white;
+}
+
+
+/* Packages CSS Starts here */
+
+.packages{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 70px;
+    margin-bottom: 90px;
+}
+
+.plan, .pro{
+    width: 400px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 15px;
+    padding-top: 30px;
+}
+
+.plan h3, .pro h3{
+    font-size: 32px;
+}
+
+.plan{
+    background-color: white;
+    height: 550px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.pro{
+    background-color: var(--clr-primary);
+}
+
+.pro h3, .pro .description, .pro .value sup, .pro .value, .pro .hook{
+    color: white;
+}
+
+.hook{
+    background-color: #5fd1a5;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.description{
+    color: var(--clr-secondary);
+    text-align: center;
+    font-weight: var(--fw-medium);
+    margin: 15px 0;
+}
+
+.value{
+    font-size: var(--fs-title);
+    font-weight: var(--fw-bold);
+}
+
+.value sup{
+    color: var(--clr-secondary);
+    font-size: 1.3rem;
+    font-weight: var(--fw-medium);
+    position: relative;
+    bottom: 10px;
+}
+
+.pack-items{
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+    font-weight: var(--fw-bold);
+}
+
+.pack-list{
+    background-color: #f9fafb;
+    padding: 20px 25px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    width: 360px;
+}
+
+.pack-list i{
+    padding-right: 12px;
+    color: var(--clr-primary);
+    font-size: 22px;
+}
+
+.pack-list button{
+    width: 100%;
+    border-radius: 15px;
+    border: none;
+    color: var(--clr-primary);
+    padding: 15px 0;
+    font-weight: var(--fw-bold);
+    background-color: white;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.pack-list button:hover{
+    background-color: var(--clr-primary);
+    color: white;
+}
+
+.pro-btn{
+    background-color: var(--clr-primary) !important;
+    color: white !important;
+    box-shadow: none !important;
+}
+
+.pro-btn:hover{
+    background-color: var(--clr-neutral-dark) !important;
+    color: white !important;
 }
