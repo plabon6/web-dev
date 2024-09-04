@@ -58,6 +58,15 @@ body {
   overflow-x: hidden;
 }
 
+a{
+    color: var(--clr-neutral-dark);
+}
+
+h2{
+    font-size: var(--fs-title);
+    font-weight: var(--fw-bold);
+}
+
 /* section {
     padding: 0 300px;
 } */
@@ -282,8 +291,6 @@ nav{
 }
 
 .collab h2{
-    font-size: var(--fs-title);
-    font-weight: var(--fw-bold);
     text-align: center;
 }
 
@@ -314,8 +321,6 @@ nav{
 }
 
 .support h2{
-    font-size: var(--fs-title);
-    font-weight: var(--fw-bold);
     margin-bottom: 30px;
     line-height: 60px;
 }
@@ -422,7 +427,7 @@ nav{
 
 
 
-/* Facilities CSS Here */
+/* Facilities CSS Starts Here */
 
 
 
@@ -438,8 +443,6 @@ nav{
 }
 
 .facilities h2{
-    font-size: var(--fs-title);
-    font-weight: var(--fw-bold);
     line-height: 3rem;
 }
 
@@ -470,4 +473,62 @@ nav{
 
 .benefit-list div{
     font-weight: var(--fw-bold);
+}
+
+
+/* Facilities CSS Ends Here */
+
+/* Pricing Section Starts Here */
+
+#pricing{
+    margin-top: 50px;
+}
+
+.pricing-content{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.pricing-content h2{
+    text-align: center;
+}
+
+.pricing-content p{
+color: var(--clr-secondary);
+line-height: 30px;
+text-align: center;
+}
+
+.bill{
+    border-radius: 12px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 20px 5px;
+    margin-top: 30px;
+}
+
+.bill ul{
+    background-color: white;
+    /* border-radius: 8px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; */
+
+}
+
+.bill ul li{
+    list-style-type: none;
+    display: inline;
+}
+
+.billing-month{
+    padding: 20px 30px;
+}
+
+.billing-year{
+padding: 18px 30px;
+background-color: var(--clr-primary);
+border-radius: 8px;
+}
+
+.billing-year a{
+    color: white;
 }
