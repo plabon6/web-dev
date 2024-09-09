@@ -80,12 +80,12 @@ p{
     padding: 0 300px;
 } */
 
-section{
+section, .subscribe-area{
     margin: 0 auto;
 }
 
 @media (min-width: 1366px) {
-    section, nav , .support-item{
+    section, nav , .support-item, .subscribe-area{
         max-width: 1320px;
     }
 }
@@ -644,4 +644,121 @@ border-radius: 8px;
 .pro-btn:hover{
     background-color: var(--clr-neutral-dark) !important;
     color: white !important;
+}
+
+/* Subscribe Section Starts Here */
+.subscribe{
+    background-color: var(--clr-neutral-dark);
+    color: white;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.subscribe-area{
+    display: flex;
+    justify-content: space-between;
+}
+
+.people{
+    width: 420px;
+}
+
+.people h2{
+    line-height: 60px;
+}
+
+.colon{
+font-size: 200px;
+height: 150px;
+margin-top: -40px;
+}
+
+.profiles{
+    display: flex;
+    gap: 10px;
+}
+
+.profiles img{
+    width: 50px;
+    border-radius: 50%;
+}
+
+.name{
+    margin: 30px 0;
+}
+
+.top-para{
+    margin-top: 20px;
+}
+
+.play-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid white;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--clr-neutral-light);
+    padding: 30px 90px;
+    border-radius: 10px;
+}
+
+.form img{
+    width: 80px;
+    margin: 0 auto;
+}
+
+.form h4{
+    text-align: center;
+    font-size: 32px;
+}
+
+.form input{
+    width: 500px;
+    border-radius: 8px;
+    padding: 0 15px;
+    font-size: 14px;
+}
+
+.form input[type=email]{
+    height: 50px;
+}
+
+.form input[type=text]{
+    height: 80px;
+}
+
+
+input, label{
+    display: block;
+    margin-bottom: 18px;
+}
+
+form > input{
+    border: none;
+}
+
+form > button{
+    width: 100%;
+    border-radius: 8px;
+    background-color: var(--clr-primary);
+    color: white;
+    padding: 15px 0;
+    border: none;
+}
+
+form > button:hover{
+    background-color: var(--clr-primary-hover);
+}
+
+.Trial{
+    margin-top: 5px;
+    text-align: right;
+    font-size: var(--fs-400);
+    color: var(--clr-secondary);
 }
