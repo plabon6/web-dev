@@ -80,12 +80,12 @@ p{
     padding: 0 300px;
 } */
 
-section, .subscribe-area{
+section, .subscribe-area, .top-footer, .bottom-footer{
     margin: 0 auto;
 }
 
 @media (min-width: 1366px) {
-    section, nav , .support-item, .subscribe-area{
+    section, nav , .support-item, .subscribe-area, .top-footer, .bottom-footer{
         max-width: 1320px;
     }
 }
@@ -706,6 +706,8 @@ margin-top: -40px;
     background-color: var(--clr-neutral-light);
     padding: 30px 90px;
     border-radius: 10px;
+    width: 680px;
+
 }
 
 .form img{
@@ -729,10 +731,6 @@ margin-top: -40px;
     height: 50px;
 }
 
-.form input[type=text]{
-    height: 80px;
-}
-
 
 input, label{
     display: block;
@@ -741,6 +739,15 @@ input, label{
 
 form > input{
     border: none;
+}
+
+form > textarea{
+    width: 100%;
+    border-radius: 8px;
+    padding: 15px 15px;
+    font-size: 14px;
+    margin-bottom: 18px;
+    resize: none;
 }
 
 form > button{
@@ -761,4 +768,80 @@ form > button:hover{
     text-align: right;
     font-size: var(--fs-400);
     color: var(--clr-secondary);
+}
+
+/* Footer Starts Here */
+
+footer{
+    background-color: var(--clr-neutral-dark);
+}
+
+.identity input{
+    width: 400px;
+    height: 60px;
+    border-radius: 50px;
+    padding: 0 20px;
+    background-color: var(--clr-neutral-dark);
+    border: 1px solid white;
+    color: white;
+}
+
+.top-footer{
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+.column h4{
+    color: white;
+    padding-bottom: 20px;
+}
+
+.column ul{
+    list-style-type: none;
+}
+
+.column ul li:not(:last-child){
+    padding-bottom: 15px;
+}
+
+.column ul li{
+    color: var(--clr-secondary);
+}
+
+.flex1{
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.flex2, .flex3{
+    flex: .8;
+}
+
+.bottom-footer{
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    margin-top: 30px;
+    padding-bottom: 30px;
+}
+
+.terms{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.terms a{
+    color: white !important;
+}
+
+.dot{
+    content: "";
+    background-color: var(--clr-secondary);
+    border-radius: 50%;
+    height: 3px;
+    width: 3px;
 }
