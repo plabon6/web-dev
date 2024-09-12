@@ -873,6 +873,7 @@ footer{
         padding: 8px 0;
         color: var(--clr-primary);
         border-radius: 8px;
+        cursor: pointer;
     }
 
     /* section, nav , .support-item, .subscribe-area, .top-footer, .bottom-footer{
@@ -908,11 +909,28 @@ footer{
     min-block-size: 100vh;
     background-color: white;
     padding: 30px 30px 0;
+    display: none;
+}
+
+.cross{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.flyout i{
+    padding: 10px;
+    border: 1px solid black;
+    cursor: pointer;
 }
 
 .flyout li{
     text-align: center;
+    list-style-type: none;
+    padding-bottom: 20px;
+}
 
+.flyout li a:hover{
+    color: var(--clr-primary)
 }
 
 /* Pricing Responsive */
