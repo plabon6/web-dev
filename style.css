@@ -726,7 +726,7 @@ margin-top: -40px;
 }
 
 .form input{
-    width: 500px;
+    width: 100%;
     border-radius: 8px;
     padding: 0 15px;
     font-size: 14px;
@@ -887,6 +887,24 @@ footer{
     section, nav , .support-item, .subscribe-area, .top-footer, .bottom-footer{
         max-width: 400px;
         padding: 0 10px;
+    }
+
+    /* Subscribe Area Responsive */
+
+    .subscribe-area{
+        flex-direction: column;
+        row-gap: 30px;
+    }
+
+    .form{
+        max-width: 380px;
+        padding: 30px 30px;
+    }
+
+    /* Footer responsive */
+
+    .top-footer{
+        flex-direction: column;
     }
 }
 
