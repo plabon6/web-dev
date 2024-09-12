@@ -845,3 +845,27 @@ footer{
     height: 3px;
     width: 3px;
 }
+
+/* Mobile Responsive CSS Here */
+@media (max-width: 480px) {
+.display-d{
+    display: none;
+}
+}
+@media (min-width: 480px) {
+    .display-m{
+        display: none;
+    }
+    }
+
+.flyout{
+    position: fixed;
+    inset: 0;
+    min-block-size: 100vh;
+    background-color: white;
+}
+
+.flyout li{
+    text-align: center;
+
+}
