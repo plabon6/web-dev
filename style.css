@@ -55,7 +55,6 @@ body {
   text-rendering: optimizeSpeed;
   line-height: 1.5;
   font-family: var(--ff-body);
-  overflow-x: hidden;
 }
 
 a{
@@ -87,6 +86,7 @@ section, .subscribe-area, .top-footer, .bottom-footer{
 @media (min-width: 1366px) {
     section, nav , .support-item, .subscribe-area, .top-footer, .bottom-footer{
         max-width: 1320px;
+        padding: 0 20px;
     }
 }
 
@@ -149,32 +149,36 @@ a{
     background: var(--clr-primary-hover);
 }
 
-#green1{
+.background{
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    height: fit-content;
+    z-index: -1;
+}
+
+.green1{
     height: 1000px;
     width: 1000px;
     background-color: var(--clr-primary);
     border-radius: 50%;
-    position: absolute;
-    z-index: -1;
+    position: relative;
     filter: blur(100px);
     opacity: 0.18;
     left: -400px;
     top: -300px;
 }
-
-#green2{
+.green2{
     height: 1000px;
     width: 1000px;
     background-color: var(--clr-primary);
     border-radius: 50%;
-    position: absolute;
-    z-index: -1;
+    position: relative;
     filter: blur(100px);
     opacity: 0.18;
-    right: -400px;
-    top: 300px;
+    right: -1300px;
+    bottom: 500px;
 }
-
 /* Primary CSS Starts Here */
 
 /* Header CSS */
@@ -847,9 +851,11 @@ footer{
     width: 3px;
 }
 
-/* Mobile Responsive CSS Here */
+/* Responsive CSS Here */
 
-@media  (max-width: 800px) {
+/* header Responsive */
+
+@media  (max-width: 820px) {
     .hideonmobile{
         display: none;
     }
@@ -868,9 +874,29 @@ footer{
         color: var(--clr-primary);
         border-radius: 8px;
     }
+
+    /* section, nav , .support-item, .subscribe-area, .top-footer, .bottom-footer{
+        min-width: 700px;
+    } */
+    .packages{
+        flex-direction: column;
+        row-gap: 40px;
+    }
+
+    section, nav , .support-item, .subscribe-area, .top-footer, .bottom-footer{
+        max-width: 400px;
+        padding: 0 10px;
+    }
 }
 
-@media (min-width: 800px) {
+/* @media (max-width: 576) {
+    section, nav , .support-item, .subscribe-area, .top-footer, .bottom-footer{
+        max-width: 400px;
+        padding: 0 20px;
+    }
+} */
+
+@media (min-width: 820px) {
     .hideondesktop{
         display: none;
     }
@@ -888,3 +914,6 @@ footer{
     text-align: center;
 
 }
+
+/* Pricing Responsive */
+
