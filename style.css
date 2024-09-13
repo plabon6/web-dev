@@ -876,17 +876,46 @@ footer{
         cursor: pointer;
     }
 
-    /* section, nav , .support-item, .subscribe-area, .top-footer, .bottom-footer{
-        min-width: 700px;
-    } */
+    /* Hero Section Responsive CSS */
+
+    .hero{
+        flex-direction: column;
+    }
+
+/* Facilities Responsive CSS */
+
+.facilities{
+    flex-direction: column;
+    align-items: center;
+}
+
+.facilities-image{
+    margin: 0;
+}
+
+    /* Pricing Responsive CSS */
+
     .packages{
         flex-direction: column;
         row-gap: 40px;
     }
 
+    /* Brand Logo Responsive Css Here */
+
+    .brands{
+        flex-direction: column;
+    }
+
     section, nav , .support-item, .subscribe-area, .top-footer, .bottom-footer{
         max-width: 400px;
         padding: 0 10px;
+    }
+
+
+    /* Support Area Responsive */
+
+    .support-item{
+        flex-direction: column;
     }
 
     /* Subscribe Area Responsive */
