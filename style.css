@@ -893,6 +893,28 @@ footer{
     .hero-content h1{
         font-size: 60px;
         line-height: 70px;
+        text-align: center;
+    }
+
+    /* Features Responsive CSS */
+
+    .top-content{
+        flex-direction: column;
+        row-gap: 30px;
+    }
+
+    .top-content h2{
+        text-align: center;
+    
+    }
+
+    .top-content p{
+        width: 100%;
+    }
+
+    .bottom-content{
+        flex-direction: column;
+        row-gap: 40px;
     }
 
 /* Facilities Responsive CSS */
@@ -934,6 +956,10 @@ footer{
 
     /* Support Area Responsive */
 
+    .support-content{
+        width: 100%;
+    }
+
     .support-item{
         flex-direction: column;
     }
@@ -954,6 +980,21 @@ footer{
 
     .top-footer{
         flex-direction: column;
+    }
+
+    .identity input{
+        width: 100%;
+    }
+
+    .bottom-footer{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .copyright{
+        margin-top: 10px;
+        font-size: 14px;
+        text-align: center;
     }
 }
 
