@@ -937,6 +937,10 @@ footer{
 
     /* Brand Logo Responsive Css Here */
 
+    .collab{
+        margin-top: 10px;
+    }
+
     .brands{
         flex-wrap: wrap;
         row-gap: 10px;
@@ -965,6 +969,14 @@ footer{
     }
 
     /* Subscribe Area Responsive */
+
+    .people{
+        width: 380px;
+    }
+
+    .people h2{
+        text-align: center;
+    }
 
     .subscribe-area{
         flex-direction: column;
