@@ -916,7 +916,14 @@ footer{
     /* Brand Logo Responsive Css Here */
 
     .brands{
-        flex-direction: column;
+        flex-wrap: wrap;
+        row-gap: 10px;
+        justify-content: space-evenly;
+    }
+
+    .brands img{
+        width: 100px;
+        height: 100px;
     }
 
     section, nav , .support-item, .subscribe-area, .top-footer, .bottom-footer{
