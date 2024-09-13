@@ -882,6 +882,19 @@ footer{
         flex-direction: column;
     }
 
+    .hero-content{
+        width: 100%;
+    }
+
+    .hero-content svg{
+        display: none;
+    }
+
+    .hero-content h1{
+        font-size: 60px;
+        line-height: 70px;
+    }
+
 /* Facilities Responsive CSS */
 
 .facilities{
